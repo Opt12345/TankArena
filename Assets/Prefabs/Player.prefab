@@ -457,7 +457,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1447617067
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 9d8bd4f8481a773488649b18bd02cbc1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -486,6 +486,7 @@ GameObject:
   - component: {fileID: 2397052124450601357}
   - component: {fileID: 6907901941795219372}
   - component: {fileID: 5853878197257220678}
+  - component: {fileID: -3125797057207953330}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -646,6 +647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   inputReader: {fileID: 11400000, guid: 5397d25802af81648be8ca743485643a, type: 2}
+  wallet: {fileID: -3125797057207953330}
   projectileSpawnPoint: {fileID: 2229923831338382634}
   serverProjectilePrefab: {fileID: 7059980743756348894, guid: 274fabaabd079e8428502393478a3717, type: 3}
   clientProjectilePrefab: {fileID: 1436704735189411730, guid: 19c2e22fa834ceb43928e4086a5ce258, type: 3}
@@ -654,6 +656,7 @@ MonoBehaviour:
   projectileSpeed: 30
   fireRate: 0.75
   muzzleFlashDuration: 0.075
+  costToFire: 1
 --- !u!114 &5853878197257220678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,6 +673,21 @@ MonoBehaviour:
   CurrentHealth:
     m_InternalValue: 0
   <MaxHealth>k__BackingField: 100
+--- !u!114 &-3125797057207953330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7264782945738496584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02f6d0866e2ba14b96c7684d6791056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  TotalCoins:
+    m_InternalValue: 5
 --- !u!1 &7478011742188317231
 GameObject:
   m_ObjectHideFlags: 0
